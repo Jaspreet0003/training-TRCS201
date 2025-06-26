@@ -20,6 +20,11 @@ Following that, we explored the concept of the Shell. The Shell acts as a middle
 
 Our teacher explained these concepts in a very clear and engaging manner, using a simple diagram to illustrate the flow of interaction:
 ![Image](https://github.com/user-attachments/assets/95f51467-59c3-4265-9ccd-06041f96bc22)
+
+# FILE SYSTEM STRUCTURES -
+
+
+
 # BELOW ARE FEW COMMANDS THAT WE PRACTISED-- 
 
 
