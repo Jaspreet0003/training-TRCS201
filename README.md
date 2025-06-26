@@ -20,6 +20,9 @@ Following that, we explored the concept of the Shell. The Shell acts as a middle
 
 Our teacher explained these concepts in a very clear and engaging manner, using a simple diagram to illustrate the flow of interaction:
 ![Image](https://github.com/user-attachments/assets/95f51467-59c3-4265-9ccd-06041f96bc22)
+# BELOW ARE FEW COMMANDS THAT WE PRACTISED-- 
+
+
 ![Image](https://github.com/user-attachments/assets/e0ed84d9-0a9f-42bf-9dd3-09ec73426040)
 
 ![Image](https://github.com/user-attachments/assets/6e33c465-9502-4594-ad4c-c2cc42aeb4a2)
