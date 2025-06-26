@@ -19,6 +19,7 @@ After the recap, we moved on to an important part of the operating system: the K
 Following that, we explored the concept of the Shell. The Shell acts as a middle layer between the user and the Kernel. It receives commands from the user, interprets them, and then passes them to the Kernel to perform the requested operations.
 
 Our teacher explained these concepts in a very clear and engaging manner, using a simple diagram to illustrate the flow of interaction:
+![Image](https://github.com/user-attachments/assets/95f51467-59c3-4265-9ccd-06041f96bc22)
 ![Image](https://github.com/user-attachments/assets/e0ed84d9-0a9f-42bf-9dd3-09ec73426040)
 
 ![Image](https://github.com/user-attachments/assets/6e33c465-9502-4594-ad4c-c2cc42aeb4a2)
