@@ -35,3 +35,6 @@ Our teacher explained these concepts in a very clear and engaging manner, using 
 ![Image](https://github.com/user-attachments/assets/e76545b7-bdd8-4504-a2ee-73295dd320ab)
 
 ![Image](https://github.com/user-attachments/assets/a134e9e1-2f03-4fa3-b560-ba3ce3c0db57)
+
+# DAY3
+
