@@ -38,3 +38,14 @@ Our teacher explained these concepts in a very clear and engaging manner, using 
 
 # DAY3
 
+![Image](https://github.com/user-attachments/assets/b45d7982-b46b-4e21-bdbb-f51dd5620097)
+
+![Image](https://github.com/user-attachments/assets/e3827eac-a844-4985-aa18-96a7b09dd720)
+
+![Image](https://github.com/user-attachments/assets/2c33a5e9-7bc4-4250-a5e4-cf5ce1955bd4)
+
+![Image](https://github.com/user-attachments/assets/fd625118-0f31-452e-bfdd-65036ef9c2d0)
+
+![Image](https://github.com/user-attachments/assets/e1bb167f-32bd-4c4b-a3ee-c53ddb755b10)
+
+![Image](https://github.com/user-attachments/assets/21671c31-3e0b-4230-8f2e-fdecbaf7b36a)
