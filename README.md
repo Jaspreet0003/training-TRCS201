@@ -38,6 +38,62 @@ Our teacher explained these concepts in a very clear and engaging manner, using 
 
 # DAY3
 
+We began by revisiting the concepts covered on the previous days to refresh our understanding. After the revision, we moved on to several new topics:
+
+⸻
+
+💻 Dual Boot Setup
+
+Dual booting allows a system to have two operating systems installed simultaneously. During startup, the user can choose which OS to boot into. This is particularly useful for switching between different environments (e.g., Windows and Linux).
+
+⸻
+
+📀 Understanding ISO Files
+
+An ISO file in Linux represents an exact copy of the data from an optical disk (like a CD or DVD) packaged in a single file using the ISO 9660 standard. It is commonly used for OS installation and software distribution.
+
+⸻
+
+🔧 Bare Metal Installation
+
+This refers to installing an operating system directly onto a physical machine’s hardware, without the use of any virtualization technology. It’s often used for setting up servers or fresh systems from scratch.
+
+⸻
+
+🖥 Virtualization: VMware vs VirtualBox
+	•	VMware: A professional-grade virtualization solution, widely used in enterprises. Known for high performance, stability, and advanced features.
+	•	VirtualBox: A free and open-source tool ideal for personal use, development, and testing. While it lacks some enterprise features, it’s easy to use and supports various operating systems.
+
+⸻
+
+💾 Disk Partitioning Schemes
+
+Partitioning splits a hard drive into separate sections, each behaving like an independent disk. This helps in organizing data and running multiple OSes.
+
+Main Types of Partitioning:
+	•	MBR (Master Boot Record)
+	•	Supports up to 4 primary partitions
+	•	Maximum disk size: 2 TB
+	•	Works with BIOS systems
+	•	Considered outdated and less flexible
+	•	GPT (GUID Partition Table)
+	•	Supports over 128 partitions
+	•	Can handle disks larger than 2 TB
+	•	Designed for UEFI systems
+	•	Offers better scalability and redundancy
+
+⸻
+
+🔐 Permissions and Shell Scripting
+
+🔸 File & Directory Permissions
+	•	chmod (change mode): Used to set or modify permissions for files and folders.
+
+Examples:
+	•	chmod +x script.sh → Grants execute permission to the script
+	•	chmod 444 file.txt → Sets file to read-only for all users
+
+
 ![Image](https://github.com/user-attachments/assets/b45d7982-b46b-4e21-bdbb-f51dd5620097)
 
 ![Image](https://github.com/user-attachments/assets/e3827eac-a844-4985-aa18-96a7b09dd720)
