@@ -94,6 +94,8 @@ Examples:
 	•	chmod 444 file.txt → Sets file to read-only for all users
 
 
+# BELOW ARE 3 PROGRAMS THAT WE PRACTISED BASED ON SHELL PROGRAMMING-
+
 ![Image](https://github.com/user-attachments/assets/b45d7982-b46b-4e21-bdbb-f51dd5620097)
 
 ![Image](https://github.com/user-attachments/assets/e3827eac-a844-4985-aa18-96a7b09dd720)
