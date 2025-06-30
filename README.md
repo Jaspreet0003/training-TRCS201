@@ -107,3 +107,120 @@ Examples:
 ![Image](https://github.com/user-attachments/assets/e1bb167f-32bd-4c4b-a3ee-c53ddb755b10)
 
 ![Image](https://github.com/user-attachments/assets/21671c31-3e0b-4230-8f2e-fdecbaf7b36a)
+
+## DAY 4
+
+📦 File Compression Using Commands
+File compression is the technique of reducing the size of one or more files by encoding the data more efficiently. It helps save storage space, makes file transfers faster, and simplifies file management.
+
+📌 Purpose:
+📂 Save Storage Space: Reduce the disk space used by files.
+
+🚀 Faster Data Transfer: Smaller files take less time to upload and download.
+
+📑 Simplified File Management: Makes handling multiple files easier by compressing them into single archives.
+
+📦 What is GZIP (GNU Zip)?
+Gzip is a popular command-line tool in Linux that compresses files to save space without losing any data. It creates compressed files with a .gz extension.
+
+🔧 Syntax:
+bash
+Copy
+Edit
+gzip filename.txt
+👉 Compresses filename.txt to filename.txt.gz and removes the original file.
+
+🔧 To Decompress a File:
+bash
+Copy
+Edit
+gunzip filename.txt.gz
+👉 Restores the original file and deletes the compressed version.
+
+🔧 Compress Without Deleting the Original:
+Use the -k option:
+
+bash
+Copy
+Edit
+gzip -k file.txt
+👉 This creates a compressed file while keeping the original.
+
+🐧 Wildcards in Linux
+Wildcards are special characters used in Linux commands to represent one or more characters in file or directory names. They allow working with multiple files at once without listing them individually.
+
+📌 Example:
+bash
+Copy
+Edit
+ls *.txt
+👉 Lists all files ending with .txt.
+
+✅ Common Wildcard Commands:
+bash
+Copy
+Edit
+rm *.log           # Removes all .log files  
+cp *.jpg images/   # Copies all .jpg files to images/ folder  
+mv report?.txt old/ # Moves files like report1.txt, report2.txt to old/
+📊 Wildcard Symbols:
+Wildcard	Description	Example
+*	Matches zero or more characters	*.txt
+?	Matches exactly one character	file?.txt
+[ ]	Matches one character from the set	file[1-3].txt
+[! ]	Matches one character not in the set	file[!0-9].txt
+{a,b,c}	Matches any listed string	file{1,2}.txt
+{1..5}	Matches a range of values	file{1..5}.txt
+
+📝 Escaping Characters in Linux
+In Linux, certain characters like *, $, ", ', &, etc., have special meanings in the shell. Escaping characters prevents the shell from interpreting them and treats them as plain text.
+
+📌 Why Use Escaping?
+To handle characters such as:
+
+ruby
+Copy
+Edit
+*, ?, |, &, <, >, $, ", ', \, etc.
+and ensure they appear or work as normal characters.
+
+🔧 Common Escaping Methods:
+Method	Effect	Example
+\	Escapes the next character	echo \$HOME → $HOME
+'...'	Treats everything inside as literal text	'*.txt' → *.txt
+"..."	Allows variables to expand, protects others	"Hello $USER" → expands
+\ (newline)	Continues command to next line	echo "Hello \ (newline)`
+
+📖 Examples:
+bash
+Copy
+Edit
+touch MyFile.txt
+ls MyFile.txt
+
+echo \$HOME        # Prints $HOME
+📝 Quoting in Linux
+Quoting controls how the shell processes special characters and variables.
+
+📌 Types of Quotes:
+Type	Purpose	Example	Output
+Single Quotes '	Preserves everything literally inside	echo '$HOME'	$HOME
+Double Quotes "	Expands variables but preserves spaces, etc.	echo "My home is $HOME"	My home is /home/user
+Backslash \	Escapes a single character	echo \$HOME	$HOME
+
+💻 Hardware: Basics of Computer Components
+Hardware refers to the physical, tangible components of a computer system — the parts you can touch, unlike software which is a set of programs and data.
+
+📌 What is Computer Hardware?
+It includes everything from the CPU to the monitor, keyboard, mouse, storage devices, and other peripherals.
+
+🔧 Basic Computer Hardware Components:
+Component	Function
+CPU (Processor)	The brain of the computer, processes instructions
+Motherboard	Connects and manages all hardware components
+RAM (Memory)	Temporary storage for quick data access
+Hard Drive / SSD	Long-term storage for files and programs
+Power Supply Unit	Converts electricity to power the computer
+Input Devices	Devices like keyboard, mouse, scanner
+Output Devices	Devices like monitor, printer
+Graphics Card (GPU)	Manages graphics and image rendering
