@@ -324,35 +324,18 @@ Hardware refers to the physical, tangible components of a computer system — th
 It includes everything from the CPU to the monitor, keyboard, mouse, storage devices, and other peripherals.
 
 
+## 🖥️ Basic Computer Hardware Components
 
-🔧 Basic Computer Hardware Components:
-
-
-Component	Function
-
-
-CPU (Processor)	The brain of the computer, processes instructions
-
-
-Motherboard	Connects and manages all hardware components
-
-
-RAM (Memory)	Temporary storage for quick data access
-
-
-Hard Drive / SSD	Long-term storage for files and programs
-
-
-Power Supply Unit	Converts electricity to power the computer
-
-
-Input Devices	Devices like keyboard, mouse, scanner
-
-
-Output Devices	Devices like monitor, printer
-
-
-Graphics Card (GPU)	Manages graphics and image rendering
+| Component              | Description                                      |
+|:----------------------|:-------------------------------------------------|
+| **CPU (Processor)**     | The brain of the computer, processes instructions |
+| **Motherboard**         | Connects and manages all hardware components      |
+| **RAM (Memory)**        | Temporary storage for quick data access           |
+| **Hard Drive / SSD**    | Long-term storage for files and programs          |
+| **Power Supply Unit**   | Converts electricity to power the computer        |
+| **Input Devices**       | Devices like keyboard, mouse, scanner             |
+| **Output Devices**      | Devices like monitor, printer                     |
+| **Graphics Card (GPU)** | Manages graphics and image rendering              |
 
 Motherboard-
 
