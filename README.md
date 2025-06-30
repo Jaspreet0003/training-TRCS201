@@ -193,6 +193,7 @@ gzip -k file.txt
 
 Wildcards are special characters used in Linux commands to represent one or more characters in file or directory names. They allow working with multiple files at once without listing them individually.
 
+![Screenshot 2025-06-30 113327](https://github.com/user-attachments/assets/b5a826db-5546-4789-8eb7-098a18e25f28)
 
 
 📌 Example:
@@ -249,6 +250,7 @@ Wildcard	Description	Example
 
 In Linux, certain characters like *, $, ", ', &, etc., have special meanings in the shell. Escaping characters prevents the shell from interpreting them and treats them as plain text
 
+![Screenshot 2025-06-30 113738](https://github.com/user-attachments/assets/686ce126-a92e-446c-837d-3efd219bfe8a)
 
 
 📌 Why Use Escaping?
@@ -295,6 +297,9 @@ echo \$HOME        # Prints $HOME
 
 
 Quoting controls how the shell processes special characters and variables.
+
+![Screenshot 2025-06-30 114826](https://github.com/user-attachments/assets/e6af38ce-3dea-4193-be5b-1ef33521bdd6)
+
 
 📌 Types of Quotes:
 
