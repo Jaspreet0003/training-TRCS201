@@ -354,4 +354,49 @@ Output Devices	Devices like monitor, printer
 
 Graphics Card (GPU)	Manages graphics and image rendering
 
+Motherboard-
+
+![mother board](https://github.com/user-attachments/assets/e2113f78-5d2c-4b32-8b63-aa1ec2168c5f)
+
+## 📖 What is a Motherboard?
+
+A **motherboard** is the primary printed circuit board (PCB) inside a computer. It acts as the **central hub** that connects all the components of a computer together — including the CPU, RAM, storage, and peripheral devices.
+
+---
+
+## 📦 Functions of a Motherboard
+
+✅ Provides electrical connections for all components  
+✅ Hosts essential system components like CPU and RAM  
+✅ Facilitates data communication between hardware devices  
+✅ Provides slots and ports for peripherals and storage devices  
+✅ Manages power distribution to components  
+
+---
+
+## 📌 Basic Components of a Motherboard
+
+| Component         | Description                                                   |
+|:------------------|:--------------------------------------------------------------|
+| **CPU Socket**       | Slot where the processor is installed                         |
+| **RAM Slots (DIMM)** | Slots for memory modules (RAM)                                |
+| **Chipset**          | Controls data flow between CPU, memory, and peripherals        |
+| **BIOS/UEFI Chip**   | Contains firmware to start and configure hardware              |
+| **Expansion Slots**  | (PCI, PCIe) for adding graphics cards, sound cards, etc.       |
+| **SATA Ports**       | Connect hard drives, SSDs, and optical drives                  |
+| **Power Connectors** | Supply power to the motherboard and components                 |
+| **USB/Audio Ports**  | Connect external devices like keyboard, mouse, speakers, etc.  |
+
+---
+
+## 🖥️ Types of Motherboards (Form Factors)
+
+| Type       | Size and Use                                                         |
+|:------------|:---------------------------------------------------------------------|
+| **ATX**       | Standard size for desktops; most common and expandable               |
+| **Micro-ATX** | Smaller than ATX; fewer expansion slots                              |
+| **Mini-ITX**  | Compact size for small PCs and home theater systems                   |
+
+
+
 
