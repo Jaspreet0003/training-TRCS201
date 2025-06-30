@@ -113,6 +113,7 @@ Examples:
 📦 File Compression Using Commands
 File compression is the technique of reducing the size of one or more files by encoding the data more efficiently. It helps save storage space, makes file transfers faster, and simplifies file management.
 
+![Screenshot 2025-06-30 112658](https://github.com/user-attachments/assets/14e13dad-7387-4809-b221-a906b52e8333)
 
 
 📌 Purpose:
