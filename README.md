@@ -389,3 +389,186 @@ A **motherboard** is the primary printed circuit board (PCB) inside a computer. 
 
 
 
+## DAY 5 
+
+🛠️ Common PC Issues and Troubleshooting Solutions
+
+Today, we discussed frequent problems users face with personal computers and how to resolve them. Below is a categorized summary, with each issue followed by its likely cause and recommended solution.
+
+⸻
+
+🔧 System Performance & Maintenance Issues
+
+• C Drive Full / PC Slowing Down
+
+The C: drive holds system-critical files and OS data. Avoid saving personal data here. To fix:
+	•	Use Disk Cleanup
+	•	Delete unnecessary files (like %temp%, temp, and prefetch)
+	•	Move files to D: or E: drives
+	•	Uninstall programs you don’t use
+
+• Computer Running Slowly
+
+Often caused by too many startup apps or limited RAM.
+	•	Open Task Manager → disable unused startup apps
+	•	Delete junk and temp files
+	•	Remove unneeded software
+
+• Fragmented Hard Disk (HDD Only)
+
+Fragmentation affects performance on HDDs (not SSDs).
+	•	Run “Defragment and Optimize Drives” via Windows search
+
+• Excess Temporary/Junk Files
+
+Generated during app usage; they slow down the system over time.
+	•	Use Disk Cleanup
+	•	Manually delete %temp%, temp, and prefetch files
+
+• Slow Startup Time
+
+Usually from too many startup programs or services.
+	•	Use Task Manager > Startup tab to disable non-essential apps
+
+⸻
+
+💻 Software-Related Issues
+
+• App Freezing or Crashing
+
+This may happen due to:
+	•	Corrupted installations
+	•	Low memory
+Fix: Force close via Task Manager, then update or reinstall the application.
+
+• Installation Errors
+
+Causes may include:
+	•	Lack of admin rights
+	•	Wrong version (32-bit vs 64-bit)
+Fix: Right-click and choose “Run as Administrator”, ensure correct version is used.
+
+• Windows Update Fails
+
+This happens if update cache gets corrupted.
+Fix:
+	•	Run Windows Update Troubleshooter
+	•	Clear contents from C:\Windows\SoftwareDistribution
+
+⸻
+
+🖨️ Hardware & Peripheral Issues
+
+• Printer Not Working
+
+Check for:
+	•	Driver issues
+	•	Connection errors
+Fix: Restart both printer and PC, check cables, and reinstall drivers if necessary.
+
+• External Drive Not Showing
+
+New or unformatted drives may not appear.
+Fix:
+	•	Go to Disk Management
+	•	Assign a drive letter
+	•	Format the drive (if required)
+
+• Random Restarts / Overheating
+
+Often due to:
+	•	Blocked fans or dust
+	•	Old thermal paste
+Fix: Clean air vents and CPU fan, apply new thermal paste if needed, use cooling pads.
+
+⸻
+
+🌐 Network & Security Problems
+
+• Internet Connected but Not Working
+
+Usually caused by:
+	•	DNS errors
+	•	Outdated network drivers
+Fix:
+	•	Restart router
+	•	Use Windows Network Troubleshooter
+	•	Run ipconfig /flushdns in Command Prompt
+
+• Antivirus Slowing System Down
+
+Too many antivirus programs cause system lag.
+Fix: Stick to one reliable antivirus (like Windows Defender), and disable non-essential scans.
+
+⸻
+
+👤 Login & Display Issues
+
+• Forgot Password
+
+Local account: Reset using another admin account or boot in Safe Mode
+Microsoft account: Use Microsoft’s password recovery tool online
+
+• Poor Graphics Performance
+
+Caused by:
+	•	Old GPU drivers
+	•	High resource usage
+Fix:
+	•	Update drivers (from NVIDIA/AMD website)
+	•	Close background apps while gaming or designing
+
+⸻
+
+💥 Blue Screen of Death (BSOD)
+
+What Is It?
+
+The BSOD (Blue Screen of Death) is a critical error screen that forces Windows to shut down to prevent damage. It’s often caused by low-level hardware or driver issues.
+
+Common Causes
+	•	Faulty device drivers
+	•	Corrupt system files
+	•	Incompatible or failing hardware (RAM, GPU, HDD)
+	•	Overheating
+	•	BIOS issues or overclocking
+	•	Malware
+
+⸻
+
+🧠 How to Analyze BSOD
+	1.	Check the Stop Code
+Example: CRITICAL_PROCESS_DIED, IRQL_NOT_LESS_OR_EQUAL
+	2.	Use Reliability Monitor
+Find it in the Start menu to see system events before crash
+	3.	View Minidump Files
+Stored at C:\Windows\Minidump\. Analyze using:
+	•	BlueScreenView (NirSoft)
+	•	WinDbg
+	•	WhoCrashed
+	4.	Check Event Viewer
+Run eventvwr.msc to view detailed logs leading to the crash
+
+
+## 🧰 Steps to Fix a BSOD
+
+| 🔢 Step | 🛠️ Action |
+|--------|-----------|
+| 1. | **Update Drivers** — Use Device Manager to update GPU, chipset, and network drivers. |
+| 2. | **Uninstall Recent Software** — Remove apps or drivers installed before the BSOD started. |
+| 3. | **System File Checker** — Run `sfc /scannow` in Command Prompt (admin mode). |
+| 4. | **Check RAM** — Use Windows Memory Diagnostic tool. |
+| 5. | **Scan for Malware** — Use Windows Defender or Malwarebytes. |
+| 6. | **Reset Overclocking** — Revert BIOS settings to default. |
+| 7. | **System Restore** — Roll back to a previous restore point. |
+| 8. | **Update Windows** — Ensure Windows is up to date with patches and security updates. |
+
+---
+
+## 🛡️ Prevention Tips
+
+- Don’t install untrusted software or drivers.
+- Create a restore point before major system changes.
+- Keep drivers and antivirus up to date.
+- Regularly clean hardware (fans, vents) to avoid overheating.
+
