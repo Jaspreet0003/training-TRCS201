@@ -524,6 +524,9 @@ Fix:
 
 What Is It?
 
+![IMG_4271](https://github.com/user-attachments/assets/c919fe10-08ab-4404-8003-03b25da7d48a)
+
+
 The BSOD (Blue Screen of Death) is a critical error screen that forces Windows to shut down to prevent damage. It’s often caused by low-level hardware or driver issues.
 
 Common Causes
