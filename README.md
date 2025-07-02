@@ -632,3 +632,66 @@ Common signs your PC might be infected:
 4. **Delete temp files** using `Disk Cleanup`
 5. **Reset browser settings** (Chrome/Edge/Firefox)
 6. **Update OS and antivirus definitions**
+
+
+
+# 🔌 RJ45 Networking Essentials
+
+This repository provides essential information about **RJ45 connectors**, including wiring standards, cable types, and usage in networking. RJ45 is the most common connector used for Ethernet networking.
+
+---
+
+## 📘 What is RJ45?
+
+**RJ45 (Registered Jack 45)** is an 8-pin connector used primarily in Ethernet networking. It connects computers, routers, switches, and other network devices using twisted-pair cables.
+
+---
+
+## 🧷 Pinout Standards
+
+There are two main wiring standards used in RJ45 connectors:
+
+### 2. T568B Standard (Most Common):
+
+Pin
+Wire Color
+Function
+1
+Orange/White
+TX+
+2
+Orange
+TX-
+3
+Green/White
+RX+
+4
+Blue
+—
+5
+Blue/White
+—
+6
+Green
+RX-
+7
+Brown/White
+—
+8
+Brown
+—
+
+
+## 🛠️ How to Crimp an RJ45 Connector
+
+1. Strip about 1 inch of outer insulation.
+2. Untwist and arrange the wires based on the T568B or T568A standard.
+3. Trim the wires evenly.
+4. Insert the wires into the RJ45 plug.
+5. Use the crimping tool to press the connector.
+6. Test the cable for connectivity.
+
+
+## 📷 Diagram
+
+![IMG_4283](https://github.com/user-attachments/assets/bf500879-43aa-4bc7-b770-cb4324718897)
