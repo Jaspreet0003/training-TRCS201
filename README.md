@@ -575,3 +575,60 @@ Run eventvwr.msc to view detailed logs leading to the crash
 - Keep drivers and antivirus up to date.
 - Regularly clean hardware (fans, vents) to avoid overheating.
 
+
+## DAY 6
+
+### 1. 🔐 Safe Mode
+Safe Mode is a diagnostic startup mode that loads only essential system drivers and services. It helps isolate and fix issues caused by third-party apps or drivers.
+
+#### ✅ How to Access Safe Mode (Windows):
+- Press `Win + R`, type `msconfig`, go to **Boot** > Check **Safe boot**, then restart.
+- Or, force reboot 3 times to trigger Windows Recovery, then go to:
+  `Troubleshoot > Advanced Options > Startup Settings > Restart > Select 4 or 5`.
+
+---
+
+### 2. 🧰 Recovery Tools
+Windows and other OS platforms offer built-in recovery tools for restoring or fixing your system.
+
+#### 🛠️ Common Tools:
+- **System Restore** – Roll back to a previous working state.
+- **Startup Repair** – Fixes boot issues automatically.
+- **Command Prompt** – Advanced troubleshooting via commands.
+- **Reset This PC** – Reinstalls Windows (with or without keeping files).
+
+---
+
+### 3. 🛠️ OS Repair Methods
+When system files are corrupt or missing, these tools can help:
+
+- `sfc /scannow` – Scans and repairs system files.
+- `chkdsk /f /r` – Checks and fixes hard drive errors.
+- `DISM /Online /Cleanup-Image /RestoreHealth` – Repairs Windows image.
+
+---
+
+### 4. 🦠 Virus & Malware Symptoms
+Common signs your PC might be infected:
+
+- Slow performance
+- Unexpected pop-ups or ads
+- Programs opening/closing on their own
+- Disabled antivirus/firewall
+- High CPU or disk usage
+- Unknown applications installed
+
+---
+
+### 5. 🧹 Basic Malware Removal Steps
+
+#### Step-by-step:
+1. **Boot into Safe Mode with Networking**
+2. **Uninstall suspicious programs** from Control Panel or Settings
+3. **Run antivirus scans** using tools like:
+   - Windows Defender
+   - Malwarebytes
+   - HitmanPro
+4. **Delete temp files** using `Disk Cleanup`
+5. **Reset browser settings** (Chrome/Edge/Firefox)
+6. **Update OS and antivirus definitions**
