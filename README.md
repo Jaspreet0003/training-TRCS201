@@ -810,3 +810,183 @@ Example: 11000000.10101000.00000001.00000001
 Example:
 Binary: 11000000.10101000.00000001.00000001
 Decimal: 192.168.1.1
+
+
+## 🧩 Classful Addressing in IPv4
+
+In classful addressing, IPv4 addresses are divided into five categories (Class A to Class E), based on the first few bits of the address. Each class has a specific IP range, default subnet mask, and intended use.
+
+### 📚 IP Address Classes Overview
+
+| Class | Starting Bits | IP Address Range       | Default Subnet Mask   | Number of Hosts       | Usage                            |
+|-------|----------------|-------------------------|------------------------|------------------------|----------------------------------|
+| A     | 0              | 1.0.0.0 – 126.255.255.255 | 255.0.0.0 ( /8 )       | ~16 million per network | Very large networks              |
+| B     | 10             | 128.0.0.0 – 191.255.255.255 | 255.255.0.0 ( /16 )     | ~65,000 per network     | Medium-sized networks            |
+| C     | 110            | 192.0.0.0 – 223.255.255.255 | 255.255.255.0 ( /24 )   | 254 per network         | Small networks (LANs)           |
+| D     | 1110           | 224.0.0.0 – 239.255.255.255 | Not applicable          | Not for host use        | Multicasting                    |
+| E     | 1111           | 240.0.0.0 – 255.255.255.255 | Not applicable          | Not for host use        | Experimental / Research         |
+
+
+
+![IMG_4329](https://github.com/user-attachments/assets/7ba371eb-97d0-457a-a4c1-819d0cecdd90)
+
+
+### 🔎 Notes:
+
+- **Class A** is used by large organizations with a vast number of devices.
+- **Class B** is allocated to medium-sized networks like universities.
+- **Class C** is common in small businesses or home networks.
+- **Class D** is reserved for multicast groups (used in streaming, conferencing).
+- **Class E** is reserved for future or experimental purposes and not assigned to devices.
+
+> ⚠️ Classful addressing is now mostly obsolete and replaced by CIDR (Classless Inter-Domain Routing), but it’s important for understanding IPv4 fundamentals.
+
+
+## 📡 Unicast vs Broadcast vs Multicast
+
+In computer networking, data can be transmitted in different modes depending on the number of recipients. Below is a comparison of **Unicast**, **Broadcast**, and **Multicast** communication methods.
+
+### 🔁 Communication Types Comparison
+
+| Mode       | Description                                                 | Destination Type           | Example Use Case                      |
+|------------|-------------------------------------------------------------|----------------------------|----------------------------------------|
+| **Unicast**   | Sends data from one sender to one specific receiver         | One-to-One                 | Web browsing, downloading a file       |
+| **Broadcast** | Sends data from one sender to **all devices** on the network | One-to-All (same network)  | ARP request, DHCP discover             |
+| **Multicast** | Sends data from one sender to **multiple selected receivers** | One-to-Many (group)        | Video streaming, IPTV, webinars        |
+
+### 📌 Summary
+
+- **Unicast**: Point-to-point communication; most common in daily internet use.
+- **Broadcast**: Reaches all devices on the local network; limited to LANs.
+- **Multicast**: Targets specific groups; reduces unnecessary network traffic.
+
+> 🧠 Tip: Multicast requires receivers to "join" a multicast group using protocols like IGMP.
+
+
+# 🧱 Networking Essentials: Subnetting, MAC, DNS, CIDR
+
+This section explores important concepts in computer networking, including **Subnetting**, **Subnet Masks**, **MAC Addresses**, **DNS**, and **CIDR**. These are critical for understanding how networks are organized, addressed, and managed.
+
+---
+
+## 🔄 Subnetting
+
+**Subnetting** is the process of dividing a larger network into smaller, manageable subnetworks (subnets). It improves performance, security, and IP address utilization.
+
+### ⚙️ Why Use Subnetting?
+
+- Efficient IP address management  
+- Reduces broadcast traffic  
+- Enhances network performance  
+- Improves security and isolation
+
+### 🧮 Example:
+
+Given IP: `192.168.1.0/24`  
+You can create 4 subnets using a /26 mask:  
+- Subnet 1: `192.168.1.0/26`  
+- Subnet 2: `192.168.1.64/26`  
+- Subnet 3: `192.168.1.128/26`  
+- Subnet 4: `192.168.1.192/26`  
+
+---
+
+## 🧠 Subnet Mask
+
+A **Subnet Mask** is used to determine the network and host portions of an IP address.
+
+### 📌 Common Subnet Masks:
+
+| Subnet Mask        | CIDR Notation | Hosts per Subnet |
+|--------------------|---------------|------------------|
+| 255.0.0.0          | /8            | 16,777,214        |
+| 255.255.0.0        | /16           | 65,534            |
+| 255.255.255.0      | /24           | 254               |
+| 255.255.255.192    | /26           | 62                |
+| 255.255.255.248    | /29           | 6                 |
+
+### ✨ How It Works:
+
+For IP `192.168.1.10` with mask `255.255.255.0`:
+- Network part: `192.168.1`
+- Host part: `10`
+
+---
+
+## 🔐 MAC Address (Media Access Control)
+
+A **MAC address** is a unique identifier assigned to a network interface card (NIC). It operates at the **Data Link Layer (Layer 2)** of the OSI model.
+
+### 📋 Format:
+
+- Consists of 6 pairs of hexadecimal numbers  
+- Example: `00:1A:2B:3C:4D:5E`
+
+### 🧬 Characteristics:
+
+- Hardware-level address
+- Fixed at the time of manufacture
+- Used for local network communication
+
+---
+
+## 🌍 DNS (Domain Name System)
+
+The **Domain Name System (DNS)** translates human-friendly domain names into IP addresses.
+
+### 🕸️ How It Works:
+
+When you type `www.example.com`, DNS translates it into an IP like `93.184.216.34`.
+
+### 📑 DNS Components:
+
+- **DNS Resolver**: Client-side tool that queries DNS servers  
+- **Root Server**: Top-level DNS servers  
+- **TLD Server**: Handles top-level domains like `.com`, `.org`  
+- **Authoritative Server**: Contains actual IP info for domains
+
+---
+
+## 📏 CIDR (Classless Inter-Domain Routing)
+
+**CIDR** replaces traditional class-based IP addressing. It allows more flexible allocation of IP addresses using **prefix notation**.
+
+### 🧾 CIDR Notation:
+
+Format: `IP_address/Prefix_length`  
+Example: `192.168.0.0/24`  
+This means the first 24 bits are for the network, and the remaining 8 are for host addresses.
+
+### 📚 Benefits of CIDR:
+
+- Efficient IP allocation  
+- Reduces routing table size  
+- Supports VLSM (Variable Length Subnet Masking)
+
+---
+
+## 🧮 CIDR to Subnet Mask Conversion Table
+
+| CIDR | Subnet Mask         | Hosts per Subnet |
+|------|---------------------|------------------|
+| /8   | 255.0.0.0           | 16,777,214        |
+| /16  | 255.255.0.0         | 65,534            |
+| /24  | 255.255.255.0       | 254               |
+| /26  | 255.255.255.192     | 62                |
+| /30  | 255.255.255.252     | 2                 |
+
+---
+
+## 📌 Summary
+
+| Concept       | Description                                      |
+|---------------|--------------------------------------------------|
+| Subnetting    | Divides a network into smaller logical subnets   |
+| Subnet Mask   | Identifies network and host parts of an IP       |
+| MAC Address   | Unique physical address for network interfaces   |
+| DNS           | Translates domain names to IP addresses          |
+| CIDR          | Classless method to represent IP ranges          |
+
+---
+
+> ✨ These concepts form the foundation of modern IP networking and are essential for network configuration, troubleshooting, and design.
