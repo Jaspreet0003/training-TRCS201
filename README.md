@@ -696,3 +696,117 @@ Brown
 
 ![IMG_5017](https://github.com/user-attachments/assets/44df9483-4573-4309-b067-d3d64359c7b8)
 
+
+## DAY 7
+
+
+Networking Fundamentals
+
+🖥️ What is a Host?
+
+
+
+A host is any device connected to a network that can send or receive data. This includes:
+	•	Desktop and Laptop Computers
+	•	Servers
+	•	Smartphones
+	•	Network Printers
+	•	IP Cameras
+	•	IoT Devices (e.g., smart TVs, smart bulbs)
+
+⸻
+
+🌐 What is a Network?
+
+A network is a collection of two or more interconnected devices that share data and resources. These devices communicate via wired (Ethernet cables) or wireless (Wi-Fi) methods.
+
+Key Functions of a Network:
+	•	📁 File and Data Sharing
+	•	🖨️ Shared Resource Access (e.g., printers, internet)
+	•	🗣️ Communication (emails, voice/video calls)
+	•	🛠️ Centralized or decentralized control over devices
+
+⸻
+
+🌍 Understanding IP Addressing
+
+An IP address (Internet Protocol address) is a unique numerical label assigned to each device on a network. It ensures devices can be identified and communicate on a local or global scale.
+
+🔢 Types of IP Addresses:
+	1.	Public IP Address
+	•	Assigned by your Internet Service Provider (ISP)
+	•	Used for communication over the internet
+	2.	Private IP Address
+	•	Used within a private LAN (Local Area Network)
+	•	Not routable on the internet
+	•	Common in homes and offices
+
+⸻
+
+🔑 Key Properties of IP Addresses:
+
+1. Uniqueness
+	•	Each device on a network must have a distinct IP address.
+	•	Duplicate IPs cause conflicts and disrupt communication.
+
+Example: Two devices cannot share the same IP like 192.168.1.10.
+
+2. Universality
+	•	IP addressing standards (IPv4/IPv6) are globally recognized.
+	•	Enables cross-border device communication and interoperability.
+
+⸻
+
+IPv4 (Internet Protocol Version 4)
+	•	Address Size: 32 bits
+	•	Format: 4 decimal-separated groups (octets)
+	•	Range per octet: 0 to 255
+	•	Example: 192.168.1.1
+
+🧮 Address Space:
+	•	Total combinations: 2³² = 4,294,967,296
+	•	This space is limited and nearing exhaustion.
+
+⸻
+
+IPv6 (Internet Protocol Version 6)
+	•	Address Size: 128 bits
+	•	Format: 8 groups of 4 hexadecimal digits
+	•	Separator: Colons (:)
+	•	Example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+🧮 Address Space:
+	•	Total combinations: 2¹²⁸ = 340 undecillion
+	•	Sufficient for the expanding number of internet-enabled devices.
+
+
+## 📊 IPv4 vs IPv6 Comparison Table
+
+| Feature               | IPv4                              | IPv6                                  |
+|------------------------|------------------------------------|----------------------------------------|
+| **Address Length**     | 32 bits (4 blocks)                | 128 bits (8 blocks)                    |
+| **Address Format**     | Decimal, separated by dots        | Hexadecimal, separated by colons       |
+| **Example**            | 192.168.0.1                       | 2001:0db8:85a3:0000:0000:8a2e:0370:7334 |
+| **Address Space**      | ~4.3 billion addresses            | ~340 undecillion addresses             |
+| **Configuration**      | Manual or via DHCP                | Auto-configuration (SLAAC) or DHCPv6   |
+| **Security**           | Optional (IPSec not mandatory)    | Built-in IPSec support                 |
+| **Header Complexity**  | Simple and small                  | More complex and larger                |
+| **Broadcast Support**  | Supports broadcast                | No broadcast; uses multicast instead   |
+| **Fragmentation**      | Done by both sender and routers   | Handled only by the sender             |
+
+IP Address Notations
+
+1. Binary Format
+	•	IPs are internally processed in binary (0s and 1s).
+	•	32-bit binary IPs are divided into 4 groups (octets).
+
+Example: 11000000.10101000.00000001.00000001
+(Binary format of 192.168.1.1)
+
+2. Dotted Decimal Notation
+	•	Human-readable format for IPv4.
+	•	Converts each 8-bit binary octet into a decimal number (0–255).
+
+Example:
+Binary: 11000000.10101000.00000001.00000001
+Decimal: 192.168.1.1
