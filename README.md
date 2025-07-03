@@ -988,5 +988,3 @@ This means the first 24 bits are for the network, and the remaining 8 are for ho
 | CIDR          | Classless method to represent IP ranges          |
 
 ---
-
-> ✨ These concepts form the foundation of modern IP networking and are essential for network configuration, troubleshooting, and design.
