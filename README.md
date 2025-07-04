@@ -988,3 +988,150 @@ This means the first 24 bits are for the network, and the remaining 8 are for ho
 | CIDR          | Classless method to represent IP ranges          |
 
 ---
+
+## DAY 8
+
+## 📥 DHCP (Dynamic Host Configuration Protocol)
+
+**DHCP** is an application-layer network protocol used to **automatically assign IP addresses** and other configuration settings to devices (clients) on a network.
+
+### 📌 Why DHCP is Important:
+- Manual IP configuration is time-consuming and error-prone, especially on large networks.
+- DHCP automates the process and ensures every device gets a valid and unique IP address.
+
+### 🔄 DHCP Workflow (DORA Process):
+| Step | Description |
+|------|-------------|
+| **Discover** | The client sends a broadcast request to locate a DHCP server. |
+| **Offer** | The DHCP server responds with an available IP and configuration options. |
+| **Request** | The client requests the offered configuration. |
+| **Acknowledgement** | The server confirms and assigns the IP address to the client. |
+
+### 🧩 Other DHCP Configurations:
+- **Subnet Mask**
+- **Default Gateway**
+- **DNS Servers**
+- **Lease Time** – how long the IP is valid
+
+### 💡 Note:
+DHCP uses **UDP ports 67 (server) and 68 (client)**.
+
+---
+
+## 🧪 Networking Commands
+
+These are essential CLI tools used to test and configure networks.
+
+### 🔹 `ping` Command
+
+Used to test **connectivity between two devices** (your computer and a remote host).
+
+#### ✅ Purpose:
+- To check if a host is reachable
+- Measure latency (round-trip time)
+- Diagnose packet loss
+
+#### 🔧 Syntax:
+```bash
+ping <hostname or IP>
+
+🧾 Sample Output:
+
+PING google.com (142.250.64.78): 56 data bytes
+64 bytes from 142.250.64.78: icmp_seq=0 ttl=117 time=23.345 ms
+
+
+## 🔹 traceroute / tracert Command
+
+Used to track the path packets take to reach a remote server. Helpful in diagnosing where delays or failures occur.
+
+✅ Purpose:
+	•	View intermediate routers or hops
+	•	Identify slow or dropped hops
+	•	Discover routing issues
+
+
+🔹 ifconfig Command
+
+Used on Linux/Unix-based systems to view and configure network interfaces.
+
+✅ Displays:
+	•	IP address
+	•	Subnet mask
+	•	MAC address
+	•	Status (UP or DOWN)
+
+
+## 🔍 What Does “64 Bytes” Mean in ping?
+
+When you run a ping command, you’ll often see lines like:
+
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=56 time=10.2 ms
+
+
+## 📘 Explanation:
+	•	64 bytes refers to the size of the ICMP reply packet sent back by the destination.
+	•	This includes 56 data bytes + 8 bytes of ICMP header (varies by OS).
+	•	In Linux, 64 bytes is the default size; in Windows, it might show 32 bytes.
+
+
+♻️ Loopback Address
+
+The loopback address is used to send network traffic to the same device (itself) for testing purposes.
+
+🧾 Loopback IP:
+	•	IPv4: 127.0.0.1
+	•	IPv6: ::1
+
+🔹 Uses:
+	•	Software testing
+	•	Checking if TCP/IP stack is working
+	•	Hosting local servers (web dev, database)
+
+💡 Note:
+
+Packets sent to 127.0.0.1 never leave the device or enter the network.
+
+⸻
+
+🔌 Ethernet
+
+Ethernet is a family of networking technologies used for wired local area networks (LANs).
+
+🧷 Key Characteristics:
+	•	Uses Cat5e/Cat6 cables
+	•	Defined by the IEEE 802.3 standard
+	•	Data is sent in frames
+	•	Speeds range from 10 Mbps to 100 Gbps+
+
+🔐 Advantages:
+	•	Stable, consistent performance
+	•	More secure (physical access required)
+	•	Minimal interference or congestion
+
+🔧 Components:
+	•	NIC (Network Interface Card)
+	•	Switches
+	•	Routers
+	•	Cables (Cat5e, Cat6, etc.)
+
+
+## 🌐 Comparison: Ethernet vs Wi-Fi vs LAN vs WAN vs Internet
+
+This section compares five key terms in networking, often confused or interchanged. Understanding the difference helps in designing, configuring, and troubleshooting networks efficiently.
+
+| Term      | Type         | Description                                                                 | Scope/Range         | Examples / Use Cases                              |
+|-----------|--------------|-----------------------------------------------------------------------------|---------------------|---------------------------------------------------|
+| **Ethernet**  | Wired Technology | Physical medium using cables for data transmission (IEEE 802.3 standard)   | Local (Room/Building) | Office computers, gaming consoles, switches       |
+| **Wi-Fi**     | Wireless Technology | Wireless local connectivity using radio signals (IEEE 802.11 standard)     | Local (~30–100 m)    | Smartphones, laptops, smart TVs                   |
+| **LAN**       | Network Type    | Local Area Network that connects devices in a small physical area          | Limited to building   | Home network, School/Office network               |
+| **WAN**       | Network Type    | Wide Area Network connecting multiple LANs over long distances             | City to Global        | Corporate branches, cellular networks             |
+| **Internet**  | Global Network  | Interconnection of millions of WANs and LANs globally                      | Worldwide             | Web browsing, email, video streaming              |
+
+---
+
+### 🧠 Summary
+
+- **Ethernet** and **Wi-Fi** are methods of connecting to a **LAN**.
+- **LANs** can be connected over long distances using **WANs**.
+- The **Internet** is a global network made up of interconnected LANs and WANs.
