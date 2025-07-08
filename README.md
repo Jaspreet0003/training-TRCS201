@@ -1032,7 +1032,8 @@ Used to test **connectivity between two devices** (your computer and a remote ho
 - Diagnose packet loss
 
 #### 🔧 Syntax:
-```bash
+`
+``bash
 ping <hostname or IP>
 
 🧾 Sample Output:
@@ -1135,3 +1136,58 @@ This section compares five key terms in networking, often confused or interchang
 - **Ethernet** and **Wi-Fi** are methods of connecting to a **LAN**.
 - **LANs** can be connected over long distances using **WANs**.
 - The **Internet** is a global network made up of interconnected LANs and WANs.
+
+
+## DAY 9
+
+# 🌐 HTML & Web Basics: A Beginner's Guide
+
+Welcome to my introductory guide on **HTML and web fundamentals**. This project is perfect for those who are just getting started with web development and want to understand how the web works from the ground up.
+
+---
+
+## ✅ What is HTML?
+
+**HTML (HyperText Markup Language)** is the standard markup language used to create and structure content on the web. It’s not a programming language, but rather a system of tags used to organize and present content such as:
+
+- Headings (`<h1>`, `<h2>`)
+- Paragraphs (`<p>`)
+- Images (`<img>`)
+- Links (`<a>`)
+
+---
+
+## 🖥️ How Browsers Render HTML
+
+Here’s a simplified view of what happens behind the scenes when you open a webpage:
+
+1. **HTML is read line-by-line** by the browser  
+2. It's turned into a **DOM (Document Object Model)**  
+3. The page is rendered using:
+   - **HTML** – for the page structure
+   - **CSS** – for visual styling
+   - **JavaScript** – for interactive features
+
+---
+
+## 📄 Basic Structure of an HTML Document
+
+An HTML document follows a consistent structure. Here's a breakdown:
+
+`
+``html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Web Page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <p>This is a paragraph of text.</p>
+    <img src="image.jpg" alt="An example image">
+    <a href="https://example.com">Visit Example</a>
+  </body>
+</html>
