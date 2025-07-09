@@ -1191,3 +1191,55 @@ An HTML document follows a consistent structure. Here's a breakdown:
     <a href="https://example.com">Visit Example</a>
   </body>
 </html>
+
+
+## DAY 10
+
+# 📄 HTML Tags Reference
+
+This repository demonstrates basic HTML tags commonly used in web development. Below are examples and usage of headings, paragraphs, lists, links, and images.
+
+---
+
+## 🏷️ Headings
+
+Headings help define the structure of content. `<h1>` is the most important (largest), and `<h6>` is the least important (smallest).
+
+`
+``html
+<h1>Main Heading</h1>
+<h2>Subheading</h2>
+<h3>Section Heading</h3>
+<h4>Minor Heading</h4>
+<h5>Smaller Heading</h5>
+<h6>Smallest Heading</h6>
+
+
+📝 Paragraphs
+The <p> tag defines paragraphs. It's used for blocks of text.
+
+html
+Copy
+Edit
+
+<p>This is a paragraph of text displayed on the webpage.</p>
+
+
+📋 Lists
+Unordered lists (<ul>) are used to display bullet-point items.
+
+🔗 Links
+The <a> tag creates clickable hyperlinks to other web pages or external sites.
+<a href="https://www.example.com">Visit Example</a>
+
+
+🖼️ Images
+The <img> tag is used to insert images into a webpage. Always use the alt attribute for accessibility.
+
+<img src="image.jpg" alt="Description of image">
+
+
+
+
+
+
