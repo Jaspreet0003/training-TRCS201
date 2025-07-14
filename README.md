@@ -1395,5 +1395,65 @@ Internal CSS is defined inside a <style> tag within the <head> of the HTML docum
 </body>
 </html>
 
+## DAY 13
 
+# 🛠️ What is Git?
+
+Git is a **Distributed Version Control System (DVCS)** used to track changes in source code during software development. It allows multiple developers to collaborate on the same project while keeping a complete history of every change.
+
+Git was created by **Linus Torvalds** in **2005** to manage the development of the Linux kernel.
+
+---
+
+## 🔄 What is Version Control?
+
+Version Control is a system that helps you manage changes to files over time. It is commonly used in software development, writing, design, and other collaborative or evolving projects.
+
+### ✅ Key Benefits:
+- Revert files to previous versions.
+- Track who made specific changes and when.
+- Collaborate without overwriting others’ work.
+- Maintain a detailed history of changes.
+
+---
+
+## 🧱 Git Architecture
+
+Git uses a **three-layer architecture** to manage your code efficiently:
+
+---
+
+### 1️⃣ Working Directory (Working Tree)
+
+- This is the current state of your project files.
+- You can view, edit, add, or delete files here.
+- Changes in this area are **not tracked** by Git until they are staged.
+
+---
+
+### 2️⃣ Staging Area (Index)
+
+- A **temporary holding area** where you prepare changes before committing.
+- Use `git add` to move changes into the staging area.
+
+**Example:**
+``bash
+git add filename
+
+Repository (.git folder)
+	•	Stores the full version history of your project.
+	•	Contains:
+	•	All commits
+	•	Branches and tags
+	•	Configuration and metadata
+
+You commit changes to the repository using:
+git commit -m "Your commit message"
+
+![IMG_4547](https://github.com/user-attachments/assets/0606d607-64bc-4402-81c5-e0796b86c359)
+![IMG_4548](https://github.com/user-attachments/assets/248ed89c-093a-47c5-a460-d2ba738579ce)
+![IMG_4546](https://github.com/user-attachments/assets/b57bd550-09c7-4bb2-93e8-f3f843f508d1)
+![IMG_4545](https://github.com/user-attachments/assets/90bb126b-9942-48c0-a6f0-239b017486d0)
+![IMG_4544](https://github.com/user-attachments/assets/4bba302c-c749-438f-93b1-1676424187fe)
+![IMG_4543](https://github.com/user-attachments/assets/a101719f-0f99-47f8-ba14-5409d7b6e220)
 
