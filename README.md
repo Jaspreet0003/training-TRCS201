@@ -1237,9 +1237,163 @@ The <a> tag creates clickable hyperlinks to other web pages or external sites.
 The <img> tag is used to insert images into a webpage. Always use the alt attribute for accessibility.
 
 <img src="image.jpg" alt="Description of image">
+## DAY 11
+# 🌐 HTML Forms, Input Types, and Semantic Tags
 
+This repository provides a basic overview of HTML forms, common input types, and semantic HTML5 tags. It's a helpful reference for beginners learning how to handle user input and structure webpages using meaningful HTML elements.
 
+---
 
+## 📋 HTML Form Example
+
+HTML forms are used to collect user input. A form is defined using the `<form>` tag and contains various types of input elements.
+
+``html
+<form action="/submit" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age"><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+🔤 Common HTML Input Types
+
+Input Type
+Description
+Example Code
+text
+Single-line plain text input
+<input type="text" name="username">
+password
+Masks input for passwords
+<input type="password" name="pass">
+email
+Validates email format
+<input type="email" name="user_email">
+number
+Accepts numeric input
+<input type="number" name="age">
+radio
+Select one option from a group
+<input type="radio" name="gender" value="male">
+checkbox
+Select one or multiple options
+<input type="checkbox" name="subscribe">
+submit
+Button to submit the form
+<input type="submit" value="Submit">
+reset
+Button to reset form fields
+<input type="reset" value="Clear">
+date
+Select a date from calendar
+<input type="date" name="dob">
+file
+Upload a file
+<input type="file" name="resume">
+tel
+Input for phone numbers
+<input type="tel" name="phone">
+url
+Input for website URLs
+<input type="url" name="website">
+
+🧱 Common Semantic HTML Tags
+
+Semantic tags in HTML5 provide meaning to the structure of a webpage, making it more readable and accessible.
+
+Tag
+Purpose
+Example Usage
+<header>
+Represents the top section of a page or section
+<header><h1>My Website</h1></header>
+<nav>
+Contains navigation links
+<nav><a href="#">Home</a> <a href="#">About</a></nav>
+<section>
+Defines a standalone section with related content
+<section><h2>Features</h2><p>...</p></section>
+<article>
+Represents independent, self-contained content
+<article><h2>Blog Title</h2><p>...</p></article>
+<aside>
+Contains content related to the main content (sidebar)
+<aside><p>Related articles</p></aside>
+<main>
+Represents the unique main content of the document
+<main><h2>Welcome</h2><p>Main content here</p></main>
+<footer>
+Defines the bottom section with metadata or links
+<footer><p>© 2025 All rights reserved</p></footer>
+
+## DAY 12
+
+# 🎨 Basic Styling Using Inline and Internal CSS
+
+CSS (Cascading Style Sheets) is used to style and design HTML content. It controls the visual presentation of elements such as layout, colors, fonts, and spacing.
+
+---
+
+## 🧾 What is CSS?
+
+CSS separates **content** (HTML) from **presentation** (styles). This improves:
+- Code readability
+- Reusability of styles
+- Maintainability of websites
+
+---
+
+## 📌 Types of CSS
+
+There are three main ways to apply CSS in an HTML document:
+
+1. **Inline CSS** – Styles applied directly to individual HTML elements using the `style` attribute.
+2. **Internal CSS** – Styles written inside a `<style>` tag in the HTML `<head>` section.
+3. **External CSS** – Styles written in a separate `.css` file (not covered in this section).
+
+---
+
+## 🖍️ Inline CSS
+
+Inline CSS is used to apply styles directly to a specific HTML element using the `style` attribute.
+
+### ✅ Example:
+``html
+<p style="color: blue; font-size: 18px;">This is a styled paragraph.</p>
+
+🧷 Internal CSS
+
+Internal CSS is defined inside a <style> tag within the <head> of the HTML document. It allows you to style multiple elements from a single location in the same HTML file.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: darkgreen;
+      text-align: center;
+    }
+    p {
+      color: #333;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Page</h1>
+  <p>This paragraph is styled using internal CSS.</p>
+
+</body>
+</html>
 
 
 
